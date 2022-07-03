@@ -8,7 +8,10 @@ const defaultOptions: DefaultOptions = {
 };
 
 export const client = new ApolloClient({
-  uri: 'https://api-sa-east-1.graphcms.com/v2/cl4s662so1tna01yyfd2l49cp/master',
+  uri: import.meta.env.VITE_API_URL,
   cache: new InMemoryCache({ resultCaching: false }),
   defaultOptions,
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_API_ACCESS_TOKEN}`,
+  },
 });
