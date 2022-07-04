@@ -2,11 +2,9 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-![Animation](https://user-images.githubusercontent.com/62571814/163643901-fc85454f-2818-4691-9624-4d657be93819.gif)
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/62571814/177203281-45aa3cd8-bcba-4853-b2a9-af78062ba2fc.png">
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/62571814/177203379-dd0b8633-05ce-43f3-8635-67faa3f15417.png">
 
-## Admin Part
-
-![Animation](https://user-images.githubusercontent.com/62571814/163644434-0e063a6d-8517-4daf-94b7-6142ca4154c4.gif)
 
 > An basic platform for one event
 
