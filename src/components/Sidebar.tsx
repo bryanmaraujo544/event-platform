@@ -1,12 +1,33 @@
-import { gql, useQuery } from '@apollo/client';
+import { motion } from 'framer-motion';
 import { useGetLessonsQuery } from '../graphql/generated';
 import { Lesson } from './Lesson';
 
-export const Sidebar = () => {
+const aside = {
+  hidden: {
+    x: '100%',
+    opacity: 0,
+    display: 'block',
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+    display: 'block',
+  },
+};
+
+interface Props {
+  asideControls: any;
+}
+
+export const Sidebar = ({ asideControls }: Props) => {
   const { data } = useGetLessonsQuery();
 
   return (
-    <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600 ">
+    <motion.aside
+      className="hidden z-50 w-full h-[100%] md:h-auto md:w-[348px] absolute md:relative bg-gray-700 p-6 border-l border-gray-600 md:block"
+      animate={asideControls}
+      variants={aside}
+    >
       <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block ">
         Cronograma de Aulas
       </span>
@@ -22,6 +43,6 @@ export const Sidebar = () => {
           />
         ))}
       </div>
-    </aside>
+    </motion.aside>
   );
 };

@@ -1,4 +1,4 @@
-export const Logo = () => {
+export const Logo = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +6,7 @@ export const Logo = () => {
       height="34"
       fill="none"
       viewBox="0 0 237 34"
+      {...props}
     >
       <path
         fill="#fff"

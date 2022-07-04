@@ -25,23 +25,23 @@ export const Subscribe = () => {
 
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20">
-        <div className="max-w-[640px]">
-          <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
+      <div className="w-full max-w-[1100px] flex flex-col items-center justify-between gap-6 mt-20 md:flex-row md:gap-">
+        <div className="max-w-[640px] px-4 flex flex-col">
+          <Logo className="self-center md:self-start w-48 md:w-auto" />
+          <h1 className="mt-8 text-2xl leading-tight text-center sm:text-3xl md:text-[2.5rem] md:text-left">
             Construa uma{' '}
             <strong className="text-blue-500">aplicação completa</strong>, do
             zero, com <strong className="text-blue-500">React</strong>
           </h1>
-          <p className="mt-4 text-gray-200 leading-relaxed">
+          <p className="mt-4 text-sm text-gray-200 leading-relaxed text-center md:text-[1rem] md:text-left">
             Em apenas uma semana você vai dominar na prática uma das tecnologias
             mais utilizadas e com alta demanda para acessar as melhores
             oportunidades do mercado.
           </p>
         </div>
 
-        <div className="p-8 bg-gray-700 border border-gray-500 rounded">
-          <strong className="text-2xl mb-6 block">
+        <div className="p-8 bg-gray-700 border-t border-gray-500 w-full md:border md:rounded md:w-auto">
+          <strong className="text-2xl mb-6 block text-center md:text-left">
             Increva-se gratuitamente
           </strong>
           <form

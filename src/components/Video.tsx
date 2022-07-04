@@ -43,7 +43,7 @@ export const Video = ({ lessonSlug }: VideoProps) => {
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+        <div className="flex flex-col md:flex-row items-start gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">{data?.lesson?.title}</h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
@@ -71,24 +71,24 @@ export const Video = ({ lessonSlug }: VideoProps) => {
               </div>
             )}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex w-full md:w-auto flex-col gap-4">
             <a
               href="#"
-              className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
+              className="p-4 w-full text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
             >
               <DiscordLogo size={24} />
               Comunidade do Discord
             </a>
             <a
               href="#"
-              className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors"
+              className="p-4 w-full text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors"
             >
               <Lightning size={24} />
               Acesse o Desafio
             </a>
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 mt-20 grid grid-cols-1 md:grid-cols-2">
           <a
             href="#"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
